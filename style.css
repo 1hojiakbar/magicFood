@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  user-select: none;
   box-sizing: border-box;
 }
 
@@ -12,8 +11,16 @@
   margin: 0 auto;
 }
 
-button{
+button,
+i,
+img {
+  user-select: none;
+  white-space: nowrap;
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }
 
 /* Home Page */
@@ -36,7 +43,7 @@ button{
   cursor: pointer;
 }
 
-.heading-con{
+.heading-con {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +58,8 @@ button{
   cursor: pointer;
 }
 
-.heading:hover, .button:hover{
+.heading:hover,
+.button:hover {
   color: purple;
   font-family: Arial, Helvetica, sans-serif;
   transform: scale(1.1);
@@ -64,7 +72,7 @@ button{
   font-weight: bold;
   background-color: darkorange;
   border: none;
-  padding: 9px 14px;
+  padding: 9px 10px;
   transition: all 800ms;
   cursor: pointer;
 }
@@ -114,7 +122,7 @@ button{
   background-color: darkorange;
   color: white;
   font-weight: bold;
-  width: 120px;
+  width: max-content;
   padding: 10px 8px;
   border-radius: 5px;
 }
@@ -236,25 +244,24 @@ span {
 
 /* -------------------------------------------------- */
 
-
 /* Section-2------------------------------ */
 
-.section-2-title{
+.section-2-title {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 34px;
 }
 
-.section-2-title h5{
+.section-2-title h5 {
   margin-top: 35px;
   color: darkorange;
 }
 
-.section-2-title h1{
+.section-2-title h1 {
   font-size: 39px;
 }
 
-.section-1{
+.section-1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -263,23 +270,23 @@ span {
   height: 400px;
 }
 
-.section-text h1{
+.section-text h1 {
   font-size: 70px;
   font-weight: 100;
-  color: #B2B2B2;
-  font-family: 'Fredoka One', cursive;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Kulim Park', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Share', cursive;
+  color: #b2b2b2;
+  font-family: "Fredoka One", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Kulim Park", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Share", cursive;
 }
 
 .section-text p {
   width: 410px;
   line-height: 21px;
   margin-top: 15px;
-  color: #73777B;
+  color: #73777b;
   font-size: 14px;
 }
 
@@ -287,8 +294,8 @@ span {
   font-size: 23px;
 }
 
-.phone-background-1{
-  background-color: rgb(240, 228, 196);;
+.phone-background-1 {
+  background-color: rgb(240, 228, 196);
   border-radius: 50%;
   margin: 0px 0 0 170px;
   height: 245px;
@@ -296,8 +303,8 @@ span {
   padding: 40px 60px;
 }
 
-.phone-background-2{
-  background-color: #E1D7C6;
+.phone-background-2 {
+  background-color: #e1d7c6;
   border-radius: 50%;
   margin: -27px 0 0 -38px;
   height: 220px;
@@ -305,14 +312,14 @@ span {
   text-align: center;
 }
 
-.phone{
+.phone {
   width: 170px;
   margin: -60px 0 0 0;
 }
 
 /* ---------------------------------------------- */
 
-.section-2{
+.section-2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -321,8 +328,8 @@ span {
   height: 400px;
 }
 
-.phone-background-3{
-  background-color: rgb(240, 228, 196);;
+.phone-background-3 {
+  background-color: rgb(240, 228, 196);
   border-radius: 50%;
   margin: 0 170px 0 0;
   height: 245px;
@@ -332,7 +339,7 @@ span {
 
 /* ---------------------------------------------------- */
 
-.section-3{
+.section-3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -550,7 +557,6 @@ span {
 }
 
 /* Section---------------------------------------- */
-
 
 .testimonials {
   display: flex;
@@ -875,79 +881,79 @@ input {
   border-radius: 0 8px 0 0;
 }
 
-hr{
+hr {
   margin-left: -130px;
   width: 125%;
 }
 
 /* -------------------------------------------- */
 
-.footer-section{
-    margin: 130px 0 0 0;
-    width: 100%;
-    height: 260px;
+.footer-section {
+  margin: 130px 0 0 0;
+  width: 100%;
+  height: 260px;
 }
 
-.footer-logo{
-    width: 170px;
+.footer-logo {
+  width: 170px;
 }
 
-.footer-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 85%;
-    text-align: center;
-    height: 201px;
-    margin: 70px 0 0 8%;
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+  text-align: center;
+  height: 201px;
+  margin: 70px 0 0 8%;
 }
 
-.footer-logo-1{
-    margin: 5px 0 45px 5px;
-    width: 30px;
-    filter: grayscale(12);
-    border-radius: 50%;
+.footer-logo-1 {
+  margin: 5px 0 45px 5px;
+  width: 30px;
+  filter: grayscale(12);
+  border-radius: 50%;
 }
 
-.footer-logo-2{
-    margin: 5px 0 45px 0;
-    width: 30px;
-    border-radius: 50%;
-    filter: grayscale(12);
+.footer-logo-2 {
+  margin: 5px 0 45px 0;
+  width: 30px;
+  border-radius: 50%;
+  filter: grayscale(12);
 }
 
-.footer-logo-3{
-    margin: 5px 0 45px 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    filter: grayscale(12);
+.footer-logo-3 {
+  margin: 5px 0 45px 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  filter: grayscale(12);
 }
 
-.service{
-    margin-top: 14px;
-    line-height: 36px;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: #3C4048;
+.service {
+  margin-top: 14px;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #3c4048;
 }
 
-.adress{
-    margin-top: 14px;
-    line-height: 26px;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: #3C4048;
+.adress {
+  margin-top: 14px;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #3c4048;
 }
 
-.footer-img{
-    text-align: left;
-    font-size: 13px;
+.footer-img {
+  text-align: left;
+  font-size: 13px;
 }
 
-.footer-img p{
+.footer-img p {
   font-family: sans-serif;
   font-weight: 500;
 }
